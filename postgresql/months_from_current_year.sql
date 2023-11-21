@@ -1,0 +1,1 @@
+select cast(date_trunc('year', now())::date + (interval '1' month * generate_series(0,11)) as date);
